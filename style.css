@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    background-image:linear-gradient(to right,#b033cc,#ff15aa);
+}
+header{
+    padding: 20px 5% 20px 10% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+}
+nav a .activo{
+    color: #deaaea;
+}
+nav a {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+nav a:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #deaaea;
+    height: 3px;
+    width: 0;
+    transition: 0.5s;
+}
+nav a:hover::after
+{
+width: 100%;
+}
+.principal {
+    height: 110vh;
+    align-items: center;
+}
+.pagina_principal{
+    max-width: 450px;
+    padding: 0 10%;
+}
+.pagina_principal h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: -18px;
+    max-width: 500px;
+    
+   
+}
+.pagina_principal h3 {
+font-size: 25px;
+color: #deaaea;
+margin-bottom: -10px;
+
+}
+.pagina_principal p {
+    font-size: 16px;
+}
+.contrata-me {
+   width: 100%;
+   text-align: center;
+   padding-top: 35px;
+}
+.contrata-me h2 {
+    font-size: 40px;
+    color: white;
+}
+.contrata-me a {
+    display: inline-flex;
+    width: 205px;
+    height: 20px;
+    background: #deaaea;
+    border: 2px solid #deaaea;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
