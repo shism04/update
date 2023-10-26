@@ -3,13 +3,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-    background-image:linear-gradient(to right,#b033cc,#ff15aa);
+    background:#b033cc
 }
 header{
     padding: 20px 5% 20px 10% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
 }
 header a {
     text-decoration: none;
@@ -46,7 +47,7 @@ nav a:hover::after
 width: 100%;
 }
 .principal {
-    height: 110vh;
+    height: 100vh;
     align-items: center;
 }
 .pagina_principal{
@@ -56,7 +57,7 @@ width: 100%;
 .pagina_principal h1 {
     color: white;
     font-size: 35px;
-    margin-bottom: -18px;
+    margin-bottom: -25px;
     max-width: 500px;
     
    
@@ -69,27 +70,76 @@ margin-bottom: -10px;
 }
 .pagina_principal p {
     font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
 }
 .contrata-me {
    width: 100%;
    text-align: center;
    padding-top: 35px;
 }
-.contrata-me h2 {
+h2 {
+    width: 100%;
     font-size: 40px;
     color: white;
+    text-align: center;
+
 }
-.contrata-me a {
+.contrata_me{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contrata_me a {
     display: inline-flex;
-    width: 205px;
-    height: 20px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
     background: #deaaea;
     border: 2px solid #deaaea;
-    border-radius: 8px;
+    border-radius: 100px;
     font-size: 16px;
     margin-right: 16px;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
+    color: #b033cc;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.contrata_me :nth-child(2){
+    background: #b033cc;
+    color: #deaaea;
+}
+.contrata_me :nth-child(1):hover{
+    color: #deaaea;
+}
+ .contrata_me :nth-child(2):hover{
+    color: #b033cc;
+} 
+.contrata_me :nth-child(2)::before{
+    background: #deaaea;
+    width: 0%;
+}
+.contrata_me :nth-child(2):hover::before{
+    width: 100%;
+}
+.contrata_me a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #b033cc;
+    border-radius: 40px;
+    z-index: -1;
+    transition: 0.5s;
 }
 
+.contrata_me a:hover::before {
+    width: 100%;
+}
