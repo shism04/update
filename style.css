@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-    background:#b033cc
+   
 }
 header{
     padding: 20px 5% 20px 10% ;
@@ -11,6 +11,7 @@ header{
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    background: #7a0096;
 }
 header a {
     text-decoration: none;
@@ -24,7 +25,7 @@ nav ul {
     color: white;
 }
 nav a .activo{
-    color: #deaaea;
+    color: #ff00ff;
 }
 nav a {
     margin-right: 20px;
@@ -37,7 +38,7 @@ nav a:after {
     position: absolute;
     bottom: -3px;
     left: 0;
-    background-color: #deaaea;
+    background-color: #ff00ff;
     height: 3px;
     width: 0;
     transition: 0.5s;
@@ -47,12 +48,14 @@ nav a:hover::after
 width: 100%;
 }
 .principal {
-    height: 100vh;
     align-items: center;
+    padding-bottom: 0px;
+    background: #7a0096;
+
 }
 .pagina_principal{
     max-width: 450px;
-    padding: 0 10%;
+    padding: 5% 10% ;
 }
 .pagina_principal h1 {
     color: white;
@@ -64,7 +67,7 @@ width: 100%;
 }
 .pagina_principal h3 {
 font-size: 25px;
-color: #deaaea;
+color: #ff00ff;
 margin-bottom: -10px;
 
 }
@@ -72,60 +75,43 @@ margin-bottom: -10px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    color: rgb(255, 255, 255);
 }
-.contrata-me {
-   width: 100%;
-   text-align: center;
-   padding-top: 35px;
-}
-h2 {
+.contrata_me{
     width: 100%;
+   background-color: #b204d8;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 45px;
+}
+.contrata_me h2{
     font-size: 40px;
     color: white;
     text-align: center;
-
 }
-.contrata_me{
-   
+.contrata_me_feautures{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.contrata_me a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: 30px;
-    background: #deaaea;
-    border: 2px solid #deaaea;
-    border-radius: 100px;
+.contrata_me_feautures a {
+    border: 2px solid #7a0096;
+    background: #ff00ff;
+    border-radius: 30px;
+    color: #7a0096;
     font-size: 16px;
     margin-right: 16px;
     text-decoration: none;
-    color: white;
     padding: 10px 20px;
-    color: #b033cc;
     font-weight: 600;
+    letter-spacing: 1px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
-.contrata_me :nth-child(2){
-    background: #b033cc;
-    color: #deaaea;
-}
-.contrata_me :nth-child(1):hover{
-    color: #deaaea;
-}
- .contrata_me :nth-child(2):hover{
-    color: #b033cc;
-} 
-.contrata_me :nth-child(2)::before{
-    background: #deaaea;
-    width: 0%;
-}
-.contrata_me :nth-child(2):hover::before{
-    width: 100%;
+.contrata_me a:nth-child(2){
+background: transparent;
+color: #ff00ff;
 }
 .contrata_me a::before{
     content: "";
@@ -134,12 +120,57 @@ h2 {
     left: 0;
     width: 0%;
     height: 100%;
-    background: #b033cc;
-    border-radius: 40px;
+    background: #b204d8;
     z-index: -1;
-    transition: 0.5s;
+    transition: .5s;
 }
-
+.contrata_me a:nth-child(2)::before{
+    background: #ff00ff;
+}
+.contrata_me a:hover{
+    color: #ff00ff;
+}
+.contrata_me a:nth-child(2):hover{
+    color: #7a0096;
+}
 .contrata_me a:hover::before {
     width: 100%;
+}
+.SobreMe{
+    width: 100%;
+    padding: 100px 10%;
+    background-color: #7a0096;
+}
+.SobreMe_contenido{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.SobreMe_contenido img{
+    border-width: 4px 0px 0px 4px;
+    border-style: solid;
+    border-color: #ff00ff;
+    width: 420px;
+    height: 550px;
+    object-fit: cover;
+}
+.SobreMe_texto{
+    color: white;
+    margin-left: 50px;
+    margin-top: -45px;
+}
+.SobreMe_texto h2{
+    font-size: 35px;
+}
+.SobreMe_texto h2 span{
+    color: #ff00ff;
+}
+.SobreMe_texto p{
+    line-height: 26px;
+    font-size: 18px;
+    margin-top: -15px;
+    margin-bottom: 30px;  
+}
+.SobreMe_texto .contrata_me_feautures {
+    display: inline-block;
 }
