@@ -113,7 +113,7 @@ margin-bottom: -10px;
 background: transparent;
 color: #ff00ff;
 }
-.contrata_me a::before{
+.contrata_me_feautures a::before{
     content: "";
     position: absolute;
     top: 0;
@@ -127,42 +127,55 @@ color: #ff00ff;
 .contrata_me a:nth-child(2)::before{
     background: #ff00ff;
 }
-.contrata_me a:hover{
+.contrata_me_feautures a:hover{
     color: #ff00ff;
 }
 .contrata_me a:nth-child(2):hover{
     color: #7a0096;
 }
-.contrata_me a:hover::before {
+.contrata_me_feautures a:hover::before {
     width: 100%;
 }
 .SobreMe{
-    width: 100%;
     padding: 100px 10%;
     background-color: #7a0096;
 }
 .SobreMe_contenido{
-    width: 80%;
+    max-width: 95%;
     display: flex;
     align-items: center;
 }
-.SobreMe_contenido img{
-    border-width: 4px 0px 0px 4px;
+.foto-cite img{
+    border-width: 6px 0px 0px 6px;
     border-style: solid;
     border-color: #ff00ff;
-    width: 420px;
+    width: 350px;
     height: 550px;
+    border-radius: 30px;
     object-fit: cover;
 }
+.foto-cite p{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.foto-cite p span {
+    margin-top: 100px;
+    font-size: 17px;
+    color: #ff00ff;
+}
+
 .SobreMe_texto{
     color: white;
     margin-left: 50px;
     margin-top: -45px;
 }
-.SobreMe_texto h2{
+#heading{
     font-size: 35px;
+    color: white;
 }
-.SobreMe_texto h2 span{
+#heading span{
     color: #ff00ff;
 }
 .SobreMe_texto p{
@@ -173,4 +186,27 @@ color: #ff00ff;
 }
 .SobreMe_texto .contrata_me_feautures {
     display: inline-block;
+}
+.educacion{
+    background:#b204d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.educacion .educacion_row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+   
+}
+.educacion_row .educacion_column {
+    flex: 1 1 40rem;
+}
+.educacion_column .titulo {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
 }
